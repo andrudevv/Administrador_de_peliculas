@@ -1,0 +1,23 @@
+.navbar-custom {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover {
+  color: #ffc107 !important;
+}
+
+.navbar-custom .nav-link {
+  color: #fff !important;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffc107 !important;
+}
