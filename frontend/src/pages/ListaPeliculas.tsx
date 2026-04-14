@@ -20,7 +20,7 @@ export function ListaPeliculas() {
         obtenerPeliculas();
     }, []);
 
-    const Eliminar = (id: number) => {
+    const Eliminar = (id: string) => {
         Swal.fire({
             title: "¿Estás seguro?",
             text: "Eliminar película!",
@@ -84,7 +84,7 @@ export function ListaPeliculas() {
                                             Editar
                                         </Link>
 
-                                        <Button color="danger" onClick={() => Eliminar(item.id!)}>
+                                        <Button color="danger" onClick={() => Eliminar(item.id)}>
                                             Eliminar
                                         </Button>
                                     </td>
