@@ -50,7 +50,7 @@ export const getMovie = async (id: string): Promise<Movie> => {
     }
 };
 
-export const getFavorite = async (): Promise<Movie> => {
+export const getFavorite = async (): Promise<Movie[]> => {
     try {
         const response = await axiosClient.get(ROUTES.MOVIES.FAVORITE);
         return response.data;
