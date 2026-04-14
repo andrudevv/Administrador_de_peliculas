@@ -2,13 +2,13 @@ import axiosClient from '../api/axiosClient';
 import ROUTES from '../api/routes';
 
 export interface Movie {
-    id?: number | string;
+    id: string;
     name: string;
     description: string;
     year: number;
     director: string;
     genre: string;
-    favorite?: boolean;
+    favorite: boolean;
 }
 const handleError = (error: any)  => {
     if (error.response) {
@@ -94,7 +94,7 @@ export const updateMovie = async (movie: Movie): Promise<Movie> => {
     }
 };
 
-export const deleteMovie = async (id: number | string): Promise<void> => {
+export const deleteMovie = async (id: string): Promise<void> => {
     try {
          await axiosClient.delete(ROUTES.MOVIES.DELETE(id.toString()));
         
