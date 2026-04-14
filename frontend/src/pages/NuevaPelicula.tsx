@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent } from "react"
+import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 import Form from "react-bootstrap/Form"

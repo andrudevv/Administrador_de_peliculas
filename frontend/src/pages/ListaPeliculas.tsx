@@ -51,7 +51,7 @@ export function ListaPeliculas() {
     return (
         <Container className="mt-5">
             <Row>
-                <Col sm={{ size: 10, offset: 1 }}>
+                <Col sm={10} className="offset-sm-1">
                     <h4 className="text-primary">Lista de Películas</h4>
                     <hr />
 
